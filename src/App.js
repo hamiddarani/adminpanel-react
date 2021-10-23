@@ -19,6 +19,8 @@ import AllPosts from "./pages/AllPosts";
 import CreatePost from "./pages/CreatePost";
 import ShowPost from "./pages/ShowPost";
 import EditPost from "./pages/EditPost";
+import NotFound from "./pages/NotFound";
+import Home from "./pages/Home";
 
 // end of Admin Pages
 
@@ -43,6 +45,8 @@ function App() {
               <Route path="/payments" element={<Payments />}/>
               <Route path="/configs" element={<Config />}/>
           </Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="*" element={<NotFound />}/>
       </Routes>
     </Provider>
   );
